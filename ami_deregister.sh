@@ -6,7 +6,7 @@
 epoch_ts=$(date +'%s')
 deregister_packer_amis () {
   # List of name prefixes to search for
-  prefixes=("BNZ-RHEL8-stable" "BNZ-RHEL8-unstable" "BNZ-RHEL7-unstable" "BNZ-RHEL7-stable")
+  prefixes=("RHEL8-stable" "RHEL8-unstable" "RHEL7-unstable" "RHEL7-stable")
   # Query AWS for owned images for each prefix
   for prefix in "${prefixes[@]}"; do
     # Array  to store the image IDs to deregister
